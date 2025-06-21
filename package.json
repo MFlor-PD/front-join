@@ -4,12 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "node --watch index.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.5.0",
+    "express": "5.1.0",
+    "mongoose": "8.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3"
@@ -23,5 +28,17 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "vite": "^5.2.0"
-  }
+  },
+  "description": "Antes de empezar con la clase tienes que tener en cuentas lo siguiente:\r - Clona primero este repositorio. Este repositorio será nuestro BACK\r - Crea un archivo `.env`donde introducirás tu `PORT` y `MONGO_URI` \r - Instala las dependencias\r - Levanta el servidor. Estará en [localhost:3000](http://localhost:3000/). Si tienes otro servicio levantado en ese puerto cámbialo.\r - npm start para levantar el servicio.\r - Ve a `POSTMAN` u otro servicio que se puedan hacer peticiones POST, GET, DELETE, PUT...\r - Usa el método POST en http://localhost:3000/create para crear tareas. El modelo es sencillo, usa algo así en el `body`:\r ```js \r {\r     \"title\": \"Aprender JS\"\r }\r ```\r Crea varias con diferentes títulos y así poder verlas y trabajar con ellas (3 o 4 están bien).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MFlor-PD/front-join.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MFlor-PD/front-join/issues"
+  },
+  "homepage": "https://github.com/MFlor-PD/front-join#readme"
 }
